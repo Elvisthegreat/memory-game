@@ -42,8 +42,14 @@ function shuffleCards() {
 const startGame = () =>{
     //Arrange the board by 4x5
     for(let row = 0; row < rows; row++){
+        let roww = [];
         for(let column = 0; column < column; column++){
+            let cardImg = images.pop();
+            roww.push(cardImg); //Js
             
+            // Create the html image tag
+            let card = document.createElement('img');
+
         }
     }
 }
