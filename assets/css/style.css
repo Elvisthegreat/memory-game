@@ -1,0 +1,32 @@
+/*Asterisk to override default settings by browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#board{
+    width: 532px;
+    height: 472px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0a0a23;
+    border: 10px solid yellow;
+}
+
+.card{
+    width: 128px;
+    height: 90px;
+    /*Add space between the cards*/
+    margin: 2.5px;
+}
