@@ -15,13 +15,35 @@ let images = [
     "assets/images/magical-lights-forest-christmas-night-winter-landscape-with-showy-country-road-trees-starry-sky-scenery-woods-snow-background-theme-new-year-holiday-nature-generative-ai_788189-12122.webp"
 ];
 
-let cardSet;
 let borad = [];
+let rows = 4;
+let colums = 5;
 
-windown.onload = function(){
+window.onload = function(){
     shuffleCards();
     startGame();
 }
-// Duplicate the images array to have pairs of each image
 
+function shuffleCards() {
+    images = [...images, ...images]; // Duplicate the images array to have pairs of each image
+    console.log(images);
+     // loop over the array from the last element to the second element
+    for(let i = images.length - 1; i > 0; i++){
+        // pick a random index from 0 to i
+        let x = Math.floor(Math.random() * (i + 1))
+        // swap the elements at i and x
+        let temp = images[i];
+        images[i] = images[x];
+        images[x] = temp;
+    }
+    console.log(images);
+}
  
+const startGame = () =>{
+    //Arrange the board by 4x5
+    for(let row = 0; row < rows; row++){
+        for(let column = 0; column < column; column++){
+            
+        }
+    }
+}
