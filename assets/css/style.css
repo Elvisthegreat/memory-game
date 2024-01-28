@@ -14,19 +14,19 @@ body {
     text-align: center;
 }
 
-#board{
+#board {
     width: 550px;
-    height: 495px;
-    margin: 0 auto;
+    height: 500px;
+    margin:  auto;
     display: flex;
     flex-wrap: wrap;
     background-color: #0a0a23;
     border: 10px solid yellow;
 }
 
-.card{
-    width: 120px;
-    height: 70px;
-    /*Add space between the cards*/
-    margin: 2.5px;
+.card {
+    width: 129px;
+    height: 13vh;
+    margin: auto;
+    border: 2px solid blue;
 }
