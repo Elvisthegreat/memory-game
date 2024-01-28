@@ -11,7 +11,6 @@ let images = [
     "assets/images/eskimo-people-living-extreme-weather-condition_23-2151036437.webp",
     "assets/images/fashion-model-bold-orange-hat-sunglasses-with-blue-makeup_100209-6467.webp",
     "assets/images/happy-children-s-sitting-inside-school-bus_220873-45893.webp",
-    
 ];
 
 let board = [];
@@ -44,7 +43,7 @@ const startGame = () => {
         let roww = [];
         for (let column = 0; column < columns; column++) {
             let cardImg = images.pop();
-            roww.push(cardImg); //Js
+            roww.push(cardImg);
 
             // Create the html image tag
             let card = document.createElement("img");
