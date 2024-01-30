@@ -55,4 +55,18 @@ const startGame = () => {
         board.push(roww);
     }
     console.log(board);
+
 };
+// Give few second to view card before showing front side
+setTimeout(frontCard, 1000);
+function frontCard(){
+    
+    for(let row = 0; row < rows; row++){
+        for(let column = 0; column < columns; column++){
+            let card = document.getElementById(row.toString() + "." + column.toString());
+            card.src = "/assets/images/back.jpg"
+        }
+    }
+}
+
+
